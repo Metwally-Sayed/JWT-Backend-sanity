@@ -16,8 +16,8 @@ export default {
       type: "string",
     },
     {
-      name: "imagebroad",
-      title: "Main Broadimage",
+      name: "image",
+      title: "Image",
       type: "image",
       options: {
         hotspot: true,
