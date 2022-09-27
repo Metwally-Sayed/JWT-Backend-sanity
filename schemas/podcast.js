@@ -20,8 +20,7 @@ export default {
     {
       name: 'author',
       title: 'Author',
-      type: 'reference',
-      to: { type: 'woman' },
+      type: 'string',
     },
     {
       name: 'imagebroad',

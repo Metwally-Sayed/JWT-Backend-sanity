@@ -6,7 +6,7 @@ import blockContent from './blockContent';
 import landingImage from './landingImage';
 import career from './career';
 import podcast from './podcast';
-import woman from './woman';
+import successStory from './successStory';
 import internship from './internship';
 
 export default createSchema({
@@ -16,7 +16,7 @@ export default createSchema({
     career,
     landingImage,
     podcast,
-    woman,
+    successStory,
     internship,
 
     blockContent,
