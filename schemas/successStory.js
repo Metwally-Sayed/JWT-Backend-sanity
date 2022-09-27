@@ -11,12 +11,6 @@ export default {
       type: "string",
     },
     {
-      name: "id",
-      title: "Id",
-      type: "string",
-      initialValue: generateId(),
-    },
-    {
       name: "image",
       title: "Image",
       type: "image",
