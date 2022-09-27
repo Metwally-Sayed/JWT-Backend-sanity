@@ -16,12 +16,6 @@ export default {
       type: "text",
     },
     {
-      name: "id",
-      title: "Id",
-      type: "string",
-      initialValue: generateId(),
-    },
-    {
       name: "mainImage",
       title: "Main image",
       type: "image",
