@@ -1,6 +1,6 @@
 export default {
-  name: 'woman',
-  title: 'Woman',
+  name: 'successStory',
+  title: 'Success Story',
   type: 'document',
   fields: [
     {
@@ -29,11 +29,6 @@ export default {
       name: 'story',
       title: 'Story',
       type: 'text',
-    },
-    {
-      name: 'quote',
-      title: 'Quote',
-      type: 'string',
     },
     {
       name: 'position',
