@@ -1,37 +1,52 @@
-import { generateId } from "../function";
+import { generateId } from '../function';
 
 export default {
-  name: "podcast",
-  title: "Podcast",
-  type: "document",
+  name: 'podcast',
+  title: 'Podcast',
+  type: 'document',
   fields: [
     {
-      name: "title",
-      title: "Title",
-      type: "string",
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation: (Rule) => [
+        Rule.required()
+          .min(10)
+          .error('A title of min. 10 characters is required'),
+        Rule.max(50).warning('Shorter titles are usually better'),
+      ],
     },
     {
-      name: "author",
-      title: "Author",
-      type: "string",
+      name: 'author',
+      title: 'Author',
+      type: 'string',
+      validation: (Rule) => [Rule.required()],
     },
     {
-      name: "image",
-      title: "Image",
-      type: "image",
+      name: 'image',
+      title: 'Image',
+      type: 'image',
       options: {
         hotspot: true,
       },
+      validation: (Rule) => [Rule.required()],
     },
     {
-      name: "videoUrl",
-      title: "VideoUrl",
-      type: "string",
+      name: 'videoUrl',
+      title: 'VideoUrl',
+      type: 'string',
+      validation: (Rule) => [Rule.required()],
     },
     {
-      name: "publishedAt",
-      title: "Published at",
-      type: "datetime",
+      name: 'publishedAt',
+      title: 'Published at',
+      type: 'datetime',
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      validation: (Rule) => [Rule.required()],
     },
   ],
 };
