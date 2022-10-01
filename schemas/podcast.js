@@ -1,4 +1,3 @@
-import { generateId } from '../function';
 
 export default {
   name: 'podcast',
@@ -13,7 +12,7 @@ export default {
         Rule.required()
           .min(10)
           .error('A title of min. 10 characters is required'),
-        Rule.max(50).warning('Shorter titles are usually better'),
+        Rule.max(100).warning('Shorter titles are usually better'),
       ],
     },
     {
@@ -35,7 +34,11 @@ export default {
       name: 'videoUrl',
       title: 'VideoUrl',
       type: 'string',
-      validation: (Rule) => [Rule.required()],
+    },
+    {
+      name: 'audioUrl',
+      title: 'Audio Url',
+      type: 'string',
     },
     {
       name: 'publishedAt',
