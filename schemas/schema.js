@@ -7,7 +7,7 @@ import career from './career';
 import podcast from './podcast';
 import successStory from './successStory';
 import internship from './internship';
-
+import woman from './woman'
 export default createSchema({
   name: 'default',
 
@@ -16,7 +16,6 @@ export default createSchema({
     podcast,
     successStory,
     internship,
-
-    blockContent,
+    blockContent
   ]),
 });
