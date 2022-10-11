@@ -31,5 +31,23 @@ export default {
       },
       validation: (Rule) => [Rule.required()],
     },
+    {
+      name: 'duration',
+      title: 'Duration',
+      type: 'string',
+      options: {
+        list: ['full-time', 'part-time'],
+      },
+      validation: (Rule) => [Rule.required()],
+    },
+    {
+      name: 'location',
+      title: 'Location',
+      type: 'string',
+      options: {
+        list: ['remotly', 'hybrid', 'site'],
+      },
+      validation: (Rule) => [Rule.required()],
+    },
   ],
 };
