@@ -1,4 +1,3 @@
-
 export default {
   name: 'podcast',
   title: 'Podcast',
@@ -8,12 +7,7 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: (Rule) => [
-        Rule.required()
-          .min(10)
-          .error('A title of min. 10 characters is required'),
-        Rule.max(100).warning('Shorter titles are usually better'),
-      ],
+      validation: (Rule) => [Rule.required()],
     },
     {
       name: 'author',
